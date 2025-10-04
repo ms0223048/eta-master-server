@@ -1,11 +1,20 @@
 {
   "name": "eta-master-server",
   "version": "1.0.0",
-  "main": "api/index.js",
+  "description": "خادم موحد لجميع خدمات الإضافة ليتم رفعه على Vercel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
+    "express": "^4.19.2",
     "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "exceljs": "^4.3.0",
-    "node-fetch": "^2.6.7"
+    "exceljs": "^4.4.0",
+    "axios": "^1.7.2",
+    "node-fetch": "^2.7.0",
+    "jszip": "^3.10.1"
+  },
+  "engines": {
+    "node": "18"
   }
 }
